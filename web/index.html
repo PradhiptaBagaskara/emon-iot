@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    Ayam Boiler
+  </a>
+</nav>
+
+		
+
+<div class="container-fluid">
+    <div class="row">
+		
+    
+        <div class="col-md-4">
+    		<form>
+			<div id="contact-form" class="form-container" data-form-container style="color: rgb(46, 125, 50); background: rgb(200, 230, 201);">
+			<div class="row">
+				<div class="form-title">
+					<span> Ganti Jam Menyala </span>
+				</div>
+			</div>
+			<div class="input-container">
+				<div class="form-group">
+					<p class="text-justify" > pilih jam untuk menyalakan </p>
+					
+					<select class="form-control" name="nyala" id="nyala">
+							<option >PILIH JAM MENYALA</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="00">24</option>							
+						</select>
+						
+						
+						<!-- <input type="text" placeholder="Jam Menyala"  id="nyala"> -->
+					</span>
+				</div>
+			
+				<div class="form-group">
+					<p class="text-justify" > pilih jam untuk mematikan </p>
+						<!-- <div class="form-group"> -->
+							<select class="form-control" name="mati" id="mati">
+							<option >PILIH JAM MATI</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="00">24</option>							
+						</select>
+						<!-- </div> -->
+				</div>
+				<div class="row submit-row">
+					<button id="submit" type="button" class="btn btn-block submit-form valid">Submit</button>
+				</div>
+			</div>
+			</div>
+			</form>
+		</div>
+
+		 <div class="col-md-4">
+    		<form>
+			<div id="contact-form" class="form-container" data-form-container style="color: rgb(46, 125, 50); background: rgb(200, 230, 201);">
+			<div class="row">
+				<div class="form-title">
+					<span> STATUS </span>
+				</div>
+			</div>
+			<div class="input-container">
+				<div class="row">
+					<p>  Jam Menyala </p>
+					<span class="req-input valid" >
+						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Settingan waktu untuk lampu menyala"> </span>
+						<input type="text" placeholder="Jam Menyala"  id="nyala_status" readonly>
+					</span>
+				</div>
+			
+				<div class="row">
+					<p class="text-justify"> Jam Mati </p>
+					<span class="req-input message-box valid"> 
+						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Settingan waktu untuk lampu mati"> </span>
+						<input type="text" placeholder="Jam Mati" id="mati_status" readonly>
+				</div>
+
+				<div class="row">
+					<p class="text-justify"> Status Lampu </p>
+					<span class="req-input message-box valid"> 
+						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Settingan waktu untuk lampu mati"> </span>
+						<input type="text" placeholder="Jam Mati" id="lampu_status" readonly>
+				</div>
+				
+			</div>
+			</div>
+			</form>
+		</div>
+	    
+		
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+<script src="myjs.js" type="text/javascript"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCelGW97iwb7w__y4wqfZP2cEKaoFsTuMQ",
+    authDomain: "ayam-broiler-b62d1.firebaseapp.com",
+    databaseURL: "https://ayam-broiler-b62d1.firebaseio.com",
+    projectId: "ayam-broiler-b62d1",
+    storageBucket: "ayam-broiler-b62d1.appspot.com",
+    messagingSenderId: "75906856629",
+    appId: "1:75906856629:web:2bfec09417e0d03cb4b0fc",
+    measurementId: "G-YYM38XB8JX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+var db = firebase.database();
+
+$(document).ready(function() {
+	$('#submit').on('click', function(){
+		var mati = $('#mati').val();
+		var nyala = $('#nyala').val();
+		if (nyala != '' && mati != ''){
+			var min = db.ref('jam_mati').set(parseInt(mati));
+			var max = db.ref('jam_nyala').set(parseInt(nyala));
+			alert('sukses! jam terupdate...');
+
+			
+		}else{
+			alert('semua jam tidak boleh kosong!');
+		}
+
+	});
+
+	var status = db.ref('status');
+	status.on('value', function(snapshot){
+		$('#lampu_status').val(snapshot.val());
+		console.log(snapshot.val());
+	});
+
+	var jam_nyala = db.ref('jam_nyala');
+	jam_nyala.on('value', function(snapshot){
+		$('#nyala_status').val(snapshot.val());
+		console.log(snapshot.val());
+	});
+
+	var jam_mati = db.ref('jam_mati');
+	jam_mati.on('value', function(snapshot){
+		$('#mati_status').val(snapshot.val());
+		console.log(snapshot.val());
+	});
+
+});
+</script>
+</body>
+</html>
